@@ -1,4 +1,4 @@
-package com.example.priya.activitydemo;
+package com.example.prane.activitydemo;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,9 +7,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-/**
- * Created by priya on 3/10/2015.
- */
 public class SignUp extends Activity {
 
     DatabaseHelper helper = new DatabaseHelper(this);
