@@ -1,12 +1,9 @@
-package com.example.priya.activitydemo;
+package com.example.prane.activitydemo;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-/**
- * Created by priya on 2/24/2015.
- */
 public class Display extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
