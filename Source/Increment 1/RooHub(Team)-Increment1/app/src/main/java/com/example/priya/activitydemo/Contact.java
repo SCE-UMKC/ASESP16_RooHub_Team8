@@ -1,8 +1,5 @@
-package com.example.priya.activitydemo;
+package com.example.prane.activitydemo;
 
-/**
- * Created by priya on 4/2/2015.
- */
 public class Contact {
     String name ,email,uname,pass;
 
