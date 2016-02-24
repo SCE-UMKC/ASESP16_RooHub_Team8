@@ -1,4 +1,4 @@
-package com.example.priya.activitydemo;
+package com.example.prane.activitydemo;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
