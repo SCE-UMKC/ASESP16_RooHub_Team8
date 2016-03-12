@@ -1,0 +1,26 @@
+<ion-view title="Firebase Login">
+  <ion-header-bar>
+    <button class="button button-icon icon ion-home" ng-click="home()">Home</button>
+    <h1 class="title">Event</h1>
+    <button class="button button-clear button-positive" ng-click="logout()">Logout</button>
+    </div>
+  </ion-header-bar>
+    <ion-content>
+        <div>
+            <div class="list list-inset">
+                <label class="item item-input">
+                    <input ng-model="username" type="text" placeholder="Username" />
+                </label>
+                <label class="item item-input">
+                    <input ng-model="password" type="password" placeholder="Password" />
+                </label>
+            </div>
+            <div class="padding-left padding-right">
+                <div class="button-bar">
+                    <a class="button" ng-click="login(username, password)">Login</a>
+                    <a class="button" ng-click="register(username, password)">Register</a>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

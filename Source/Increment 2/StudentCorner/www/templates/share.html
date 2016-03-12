@@ -1,0 +1,52 @@
+<ion-header-bar>
+    <div>
+    <button class="button button-icon icon ion-home" ng-click="home()"></button>
+    <h1 class="title">Student Corner</h1>
+    <button class="button button-clear button-positive" ng-click="logout()">Logout</button>
+    </div>
+</ion-header-bar>
+   <ion-content padding="true">
+      <div class="card">
+      <div class="item item-divider">
+         <b> Share Information</b>
+      </div>
+      <ul class="list">
+      <li class="item" id="displayLabel1">
+         <div class="item item-text-wrap">
+         <button class="button button-block button-royal item-icon-left" ng-click="whatsappShare()">
+         <i class="icon ion-social-whatsapp"></i>
+         WhatsApp
+         </button>
+           </div>
+      </li>
+        </ul>
+      <ul class="list">
+         <li class="item" id="displayLabel2">
+            <div class="item item-text-wrap">
+            <button class="button button-block button-royal item-icon-left" ng-click="twitterShare()">
+            <i class="icon ion-social-twitter"></i>
+            twitter
+            </button>
+              </div>
+         </li>
+         <li class="item" id="displayLabel3">
+            <div class="item item-text-wrap">
+               <button class="button button-block button-royal item-icon-left" ng-click="facebookShare()">
+               <i class="icon ion-social-facebook"></i>
+               facebook
+               </button>
+              </div>
+         </li>
+         <li class="item" id="displayLabel">
+         <div class="item item-text-wrap">
+         <button class="button button-block button-royal item-icon-left" ng-click="OtherShare()">
+         <i class="icon ion-android-share-alt"></i>
+         Other
+         </button>
+           </div>d
+         </li>
+      </ul>
+      </div>
+      </div>
+   </ion-content>
+
