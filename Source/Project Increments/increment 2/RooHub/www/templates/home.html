@@ -1,0 +1,22 @@
+<ion-header-bar>
+  <button class="button button-icon icon ion-home" ng-click="home()"></button>
+  <h1 class="title">RooHub</h1>
+  <button class="button button-clear button-positive" ng-click="logout()">Logout</button>
+</div>
+</ion-header-bar>
+<ion-content padding="true">
+   <div>
+        Hello, <label><b>{{username1}}</b></label>
+    </div>
+    <div style="position:absolute;left:100px;top:400px;">
+        Admin, <label><b>{{firstname}}</b></label> <b>{{lastname}}</b>
+    </div>
+<div>
+     <button class="button button-block button-calm padding-horizontal" ng_click="profile()">Profile</button>
+   <!-- <button class="button button-block button-calm padding-horizontal" ng_click="twitterAuth()">twitter/button>-->
+  <button class="button button-block button-calm padding-horizontal" ng_click="events()">Task Tracker</button>
+  <button class="button button-block button-calm padding-horizontal" ng_click="emptyBoardRoom()">Board Room</button>
+
+    </div>
+</ion-content>
+
