@@ -1,0 +1,39 @@
+<ion-header-bar>
+  <button class="button button-icon icon ion-home" ng-click="home()"></button>
+  <h1 class="title">RooHub</h1>
+  <button class="button button-clear button-positive" ng-click="logout()">Logout</button>
+  </div>
+</ion-header-bar>
+<ion-content padding="true">
+  <div>
+    <h2>Welcome to NA1 Board room</h2>
+  </div>
+  <div class="list list-inset">
+    <label class="item item-input">
+      <input type="text" id="na1posting" class="form-control" placeholder="post here" required autofocus ng-model="na1posting">
+
+    </label>
+    <button class="button button-block button-balanced padding-horizontal" ng_click="na1post(na1posting)">post</button>
+  </div>
+
+
+  <div class="list">
+    <button class="button button-block button-calm padding-horizontal" ng_click="listPostsNA1()">View All posts</button>
+    <ion-list>
+      <ion-item>
+
+        <div class="list">
+          <!-- <a class="item item-avatar" href="#">
+<img src="img/san.jpg">
+
+</a>-->
+          <div align="left">
+            <h2 style="color:black" ng-bind-html="myHTML"></h2>
+          </div>
+        </div>
+  </div>
+
+  </ion-item>
+
+
+</ion-content>
