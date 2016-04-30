@@ -1,0 +1,20 @@
+
+<ion-view view-title="Recording Lectures">
+  <ion-pane>
+    <ion-header-bar>
+      <button class="button button-icon icon ion-home" ng_click="home()"></button>
+      <h1 class="title">Event</h1>
+      <button class="button button-clear button-positive" ng-click="logout()">Logout</button>
+    </ion-header-bar>
+    <ion-content padding="true">
+      <div>
+        <button class="button button-block button-positive padding-horizontal" ng_click="playAudio()">Play Audio</button>
+        <button class="button button-block button-positive padding-horizontal" ng_click="pauseAudio()">Pause Audio</button>
+        <button class="button button-block button-positive padding-horizontal" ng_click="stopAudio()">Stop Audio</button>
+        <button class="button button-block button-positive padding-horizontal" ng_click="recordAudio()">Start Recording</button>
+        <button class="button button-block button-positive padding-horizontal" ng_click="stopRecord()">Stop Recording</button>
+
+      </div>
+    </ion-content>
+  </ion-pane>
+</ion-view>

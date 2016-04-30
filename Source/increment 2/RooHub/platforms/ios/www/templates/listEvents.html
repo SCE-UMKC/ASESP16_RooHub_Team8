@@ -1,0 +1,32 @@
+<ion-header-bar>
+    <div>
+    <button class="button button-icon icon ion-home" ng-click="home()"></button>
+    <h1 class="title">Student Corner</h1>
+    <button class="button button-clear button-positive" ng-click="logout()">Logout</button>
+    </div>
+</ion-header-bar>
+<ion-content padding="true">
+
+    <div class="list">
+        <button class="button button-block button-positive padding-horizontal" ng_click="listEvent()">list All Events</button>
+        <ion-list>
+            <ion-item>
+
+                <div class="list">
+                    <!-- <a class="item item-avatar" href="#">
+      <img src="img/san.jpg">
+
+    </a>-->
+                    <div align="center">
+                        <h2 style="color:red" ng-bind-html="myHTML"></h2>
+                    </div>
+                </div>
+    </div>
+  <div style="position:absolute;left:100px;top:400px;">
+    Admin, <label><b>{{firstname}}</b></label> <b>{{lastname}}</b>
+  </div>
+    </ion-item>
+    <ion-list>
+
+    </ion-list>
+</ion-content>
