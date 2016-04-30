@@ -1,0 +1,30 @@
+<ion-view view-title="Create Event">
+  <ion-header-bar>
+    <button class="button button-icon icon ion-home" ng-click="home()"></button>
+    <h1 class="title">New Task</h1>
+    <button class="button button-clear button-positive" ng-click="logout()">Logout</button>
+    </div>
+  </ion-header-bar>
+  <ion-pane>
+    <ion-content padding="true">
+      <div class="list">
+
+        <label class="item item-input">
+          <input type="text" id="eventName" class="form-control" placeholder="Task Name" required autofocus ng-model="eventName">
+        </label>
+
+        <label class="item item-input">
+          <input type="text" id="eventDescription" class="form-control" placeholder="Task Description" required autofocus ng-model="eventDescription">
+        </label>
+        <label class="item item-input">
+        <h4>Start Date:</h4>  <input type="date" id="startDate" class="form-control" placeholder="Start Date" required autofocus ng-model="startDate">
+        </label>
+        <label class="item item-input">
+          <h4>End Date:</h4> <input type="date" id="endDate" class="form-control" placeholder="End Date" required autofocus ng-model="endDate">
+        </label>
+
+      </div>
+      <button class="button button-block button-calm padding-horizontal" ng_click="createNewEvent(eventName,eventDescription,startDate,endDate)">Create New Task</button>
+    </ion-content>
+  </ion-pane>
+</ion-view>
