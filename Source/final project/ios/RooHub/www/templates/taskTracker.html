@@ -1,0 +1,55 @@
+<ion-header-bar>
+  <button class="button button-icon icon ion-home" ng-click="home()"></button>
+  <h1 class="title">RooHub</h1>
+  <button class="button button-clear ion-power button-positive" ng-click="logout()"></button>
+
+</ion-header-bar>
+<ion-content padding="true" class="testblur">
+  <div data-ng-controller="AseCtrl" data-ng-init="listEvent()">
+    <table>
+      <tr>
+        <td align="left">
+          <button class="button icon-left ion-chevron-left button-clear button-dark " ng_click="home()">Back</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h2>Task Tracking Organizer</h2></td>
+        <td align="right">
+          <button class="button button-icon icon ion-refresh " ng_click="listEvent()"></button></td>
+      </tr></table>
+  </div>
+
+   <div>
+
+
+     <div class="list">
+
+       <a class="item item-avatar" style="background-color: azure" ng_click="create()">
+        <img src="http://www.investigacionyciencia.es/files/18876.jpg">
+         <!--<img src="http://7minutearticle.com/images/hand.png">-->
+         <h2 align="center"><b>Create a Task</b></h2>
+         <p align="center">Tap to record a task</p>
+       </a>
+
+     </div>
+     <!--<br> <button class="button button-block button-calm padding-horizontal" ng_click="create()">Create a Task</button>-->
+  </div>
+  <div class="list">
+    <br>
+    <h4 align="center">List of Events</h4>
+    <ion-list>
+      <ion-item>
+
+        <div class="list">
+
+          <div align="left">
+            <h2 style="color:black" ng-bind-html="myHTML"></h2>
+          </div>
+        </div>
+  </div>
+
+  </ion-item>
+
+
+</ion-content>

@@ -1,0 +1,56 @@
+/* Empty. Add your own CSS if you like */
+.container {  position: relative; }
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-image: url('icon.png');
+  opacity: 0.5;
+}
+
+.login {
+
+  background-image: url("image2.png");
+  background-size: 100% 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+
+}
+.testback{
+  background-image: url("handshake-people-vector-540x334.png");
+  background-size: 100% 70%;
+  background-repeat: no-repeat;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+.testhome{
+
+  background-image: url("connect-1_3D_people-Agreement.png");
+  background-size: 100% 100%;
+  margin-top: 5%;
+
+
+}
+
+.testblur{
+
+  background-image: url("blurred-image-7588-7881-hd-wallpapers.jpg");
+  background-size: 100% 100%;
+
+
+}
+​
+.testtrans{
+
+  background-image: url("blurred-image-7588-7881-hd-wallpapers.jpg");
+
+}
+
+

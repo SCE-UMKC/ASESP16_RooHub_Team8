@@ -1,0 +1,83 @@
+
+     <ion-header-bar style="background-color:#b5d592">
+         <div>
+              <button class="button button-icon icon ion-home" ng-click="home()"></button>
+            <h1 align="center" class="title">RooHub</h1>
+
+            <button align='left'class="button button-clear ion-power button-positive" ng-click="logout()"></button>
+         </div>
+        </ion-header-bar>
+  <ion-content padding="true" class="testblur">
+    <div align="left">
+      <button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="prf()" >Back</button>
+    </div>
+     <div class="rows">
+       <div class="list">
+         <label class="item item-input">
+           <input type="text" id="user" class="form-control" placeholder="Enter new Username"
+                  required autofocus ng-model="username">
+         </label>
+         <label class="item item-input">
+           <input type="password" id="user" class="form-control" placeholder="Enter new Password"
+                  required autofocus ng-model="password">
+         </label>
+         <label class="item item-input">
+           <input type="text" id="user" class="form-control" placeholder="Enter new Email"
+                  required autofocus ng-model="email">
+         </label>
+
+         </div>
+        <!-- <input type="text" id="user" class="form-control" placeholder="Enter new Username"
+                required autofocus ng-model="username">
+              <input type="password" id="user" class="form-control" placeholder="Enter new Password"
+                required autofocus ng-model="password">
+          <input type="text" id="user" class="form-control" placeholder="Enter new Email"
+                required autofocus ng-model="email">-->
+    <button class="button button-block button-balanced padding-horizontal" ng-click="update(username,password,email)">Update Profile</button>
+            </div>
+    <div class="list">
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Subject 1
+        </div>
+        <select>
+          <option selected>ASE</optionselected>
+          <option>PB</option>
+          <option>NA1</option>
+        </select>
+      </label>
+
+    </div>
+
+    <div class="list">
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Subject 2
+        </div>
+        <select>
+          <option>ASE</option>
+          <option selected>PB</option>
+          <option>NA1</option>
+        </select>
+      </label>
+
+    </div>
+
+    <div class="list">
+
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Subject 3
+        </div>
+        <select>
+          <option>ASE</option>
+          <option>PB</option>
+          <option selected>NA1</option>
+        </select>
+      </label>
+
+    </div>
+
+  </ion-content>
