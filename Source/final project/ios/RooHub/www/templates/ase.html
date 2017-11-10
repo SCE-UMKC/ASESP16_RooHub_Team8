@@ -1,0 +1,54 @@
+<ion-header-bar style="background-color:#b5d592">
+  <button class="button button-icon icon ion-home" ng-click="home()"></button>
+  <h1 class="title">RooHub</h1>
+  <button class="button button-clear ion-power button-positive" ng-click="logout()"></button>
+  </div>
+</ion-header-bar>
+<ion-content padding="true" class="testblur">
+  <div data-ng-controller="AseCtrl" data-ng-init="listPosts()">
+    <div>
+      <table>
+        <tr>
+          <td align="left">
+            <button class="button icon-left ion-chevron-left button-clear button-dark " ng_click="br()">Back</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Welcome to ASE Board room</h2></td>
+          <td align="right">
+            <button class="button button-icon icon ion-refresh " ng_click="listPosts()"></button></td>
+        </tr></table>
+    </div>
+
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" id="aseposting" class="form-control" placeholder="post here" required autofocus ng-model="aseposting">
+
+      </label>
+      </div>
+    <div>
+      <button class="button button-block button-balanced padding-horizontal" ng_click="asepost(aseposting)">post</button>
+    </div>
+
+
+    <div class="list">
+
+      <ion-list>
+        <ion-item>
+
+          <div class="list">
+
+            <div align="left">
+              <h2 style="color:black" ng-bind-html="myHTML"></h2>
+            </div>
+
+          </div>
+    </div>
+
+  </div>
+
+  </ion-item>
+
+
+</ion-content>

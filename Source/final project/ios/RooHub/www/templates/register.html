@@ -1,0 +1,37 @@
+<ion-view view-title="Register">
+ <ion-pane>
+<ion-header-bar style="background-color:#b5d592">
+ <div align="center">
+   <h1 class="title">RooHub</h1>
+
+</div>
+</ion-header-bar>
+
+
+  <ion-content padding="true" class="testblur">
+    <div>
+      <button class="button icon-left ion-chevron-left button-clear button-dark" ng-click="logout()" >Back</button>
+    </div>
+    <div class="list">
+  <label class="item item-input">
+    <input type="text" id="username" class="form-control" placeholder="Enter Username" required autofocus ng-model="username">
+  </label>
+  <label class="item item-input">
+ <input type="password" id="password" class="form-control" placeholder="Enter Password" required autofocus ng-model="password">
+  </label>
+    <label class="item item-input">
+   <input type="text" id="email" class="form-control" placeholder="Enter Email" required autofocus ng-model="email">
+  </label>
+      <label class="item item-input">
+        <input type="text" id="question" class="form-control" placeholder="Enter any security question?" required autofocus ng-model="question">
+      </label>
+      <label class="item item-input">
+        <input type="text" id="answer" class="form-control" placeholder="Enter your answer" required autofocus ng-model="answer">
+      </label>
+      <button class="button button-block button-balanced padding-horizontal"  ng-click="register(username,password,email,question,answer)">Register</button>
+</div>
+
+  </ion-content>
+            </ion-pane>
+</ion-view>
+

@@ -1,0 +1,52 @@
+<ion-view view-title="Create Event">
+  <ion-header-bar style="background-color:#b5d592">
+    <button class="button button-icon icon ion-home" ng-click="home()"></button>
+    <h1 class="title">RooHub</h1>
+    <button class="button button-clear ion-power button-positive" ng-click="logout()"></button>
+    </div>
+  </ion-header-bar>
+  <ion-pane>
+    <ion-content padding="true" class="testblur">
+      <div class="list">
+        <div> <table>
+          <tr>
+            <td align="left">
+              <button class="button icon-left ion-chevron-left button-clear button-dark " ng_click="tt()">Back</button>
+            </td>
+          </tr></table></div>
+
+        <label class="item item-input">
+          <input type="text" id="eventName" class="form-control" placeholder="Task Name" required autofocus ng-model="eventName">
+        </label>
+
+        <label class="item item-input">
+          <input type="text" id="eventDescription" class="form-control" placeholder="Task Description" required autofocus ng-model="eventDescription">
+        </label>
+        <label class="item item-input">
+        <h4>Start Date:</h4>  <input type="date" id="startDate" class="form-control" placeholder="Start Date" required autofocus ng-model="startDate">
+        </label>
+        <label class="item item-input">
+          <h4>End Date:</h4> <input type="date" id="endDate" class="form-control" placeholder="End Date" required autofocus ng-model="endDate">
+        </label>
+
+
+
+
+          <label class="item item-input item-select">
+            <div class="input-label">
+              Public
+            </div>
+            <select name="list" id="publicset" ng-model="publicset">
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          </label>
+
+
+
+
+      </div>
+      <button class="button button-block button-calm padding-horizontal" ng_click="createNewEvent(eventName,eventDescription,startDate,endDate,publicset)">Create New Task</button>
+    </ion-content>
+  </ion-pane>
+</ion-view>
